@@ -2,21 +2,26 @@
 
 :root {
     --sage: #b4b8ab;
-    --dark-blue: #153243;
+    --dark-blue: rgb(15, 30, 39);
     --teal-blue: #284b63;
-    --cream: #f4f9e9;
+    --cream: #ffffff;
     --light-gray: #eef0eb;
     
     --bg-color: var(--cream);
     --text-color: var(--dark-blue);
     --card-bg: #ffffff;
-    --nav-glass: rgba(244, 249, 233, 0.9);
+    --nav-glass: rgba(255, 255, 255, 0.9);
     --filter-bg: var(--light-gray);
     --header-border: var(--teal-blue);
 }
 
 html {
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 body.dark-mode {
@@ -35,10 +40,6 @@ main.main-content {
 select {
     outline: none;
     color: var(--text-color);
-}
-
-.search-btn {
-    transition: all 0.3 ease;
 }
 
 select option {
@@ -103,6 +104,10 @@ nav a, nav button, nav select { text-decoration: none; color: var(--text-color);
 .hero { padding: 8rem 2rem 4rem; text-align: center; }
 .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
 
+#lang-select {
+    background-color: var(--nav-glass);
+}
+
 @keyframes textShine {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -137,11 +142,10 @@ nav a, nav button, nav select { text-decoration: none; color: var(--text-color);
 .feature i { color: var(--sage); }
 
 /* Search Bar */
-.search-box { background: var(--card-bg); padding: 1rem; border-radius: 50px; display: flex; align-items: center; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.05); gap: 15px; }
-.search-box i { padding: 0 1rem; color: var(--teal-blue); }
+.search-box { background: var(--card-bg); padding: 1rem; border-radius: 50px; display: flex; flex-wrap: wrap; align-items: center; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.05); gap: 15px; }
+.search-box i { padding: 0 1rem; color: var(--header-border); }
 .search-box select { flex: 1; border: none; outline: none; background: transparent; color: var(--text-color); font-size: 1rem; }
-.search-btn { background: #293a44; color: white; padding: 0.8rem 2rem; border-radius: 30px; border: none; cursor: pointer; font-weight: bold; }
-.search-btn:hover { background: var(--dark-blue); }
+.search-btn { background: var(--dark-blue); color: white; padding: 0.8rem 2rem; border-radius: 30px; border: none; cursor: pointer; font-weight: bold; }
 
 /* FAQ */
 .faq-section { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
@@ -169,14 +173,14 @@ body.dark-mode .cta-section { background: rgba(255,255,255,0.05); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-.shake-btn { padding: 1rem 2rem; background: var(--teal-blue); color: white; border-radius: 8px; text-decoration: none; display: inline-block; animation: shake 2.5s infinite; font-weight: bold; }
+.shake-btn { padding: 1rem 2rem; background: var(--dark-blue); color: white; border-radius: 8px; text-decoration: none; display: inline-block; animation: shake 2.5s infinite; font-weight: bold; }
 
 /* Contact Page */
 .contact-wrapper { display: flex; flex-wrap: wrap; max-width: 1000px; margin: 8rem auto 4rem; gap: 2rem; padding: 0 2rem; }
 .contact-card, .contact-form { flex: 1; min-width: 300px; background: var(--card-bg); padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
 .big-icon { font-size: 4rem; color: var(--sage); display: block; margin-bottom: 1rem; }
 .form-group input, .form-group textarea { width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid var(--sage); border-radius: 8px; background: transparent; color: var(--text-color); }
-.submit-btn { width: 100%; padding: 1rem; background: var(--teal-blue); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.submit-btn { width: 100%; padding: 1rem; background: var(--dark-blue); color: white; border: none; border-radius: 8px; cursor: pointer; }
 
 /* Results Page */
 .filters { 
@@ -209,7 +213,7 @@ body.dark-mode .cta-section { background: rgba(255,255,255,0.05); }
 footer { text-align: center; padding: 2rem; background: var(--dark-blue); color: var(--sage); font-size: 0.9rem; }
 
 @media (max-width: 768px) {
-    .nav-links { position: fixed; right: -100%; top: 70px; height: 100vh; width: 70%; background: var(--card-bg); flex-direction: column; padding: 2rem; transition: 0.4s; box-shadow: -5px 0 15px rgba(0,0,0,0.1); }
+    .nav-links { position: fixed; right: -100%; top: 70px; height: 100vh; width: 70%; background: var(--card-bg); flex-direction: column; padding: 2rem; box-shadow: -5px 0 15px rgba(0,0,0,0.1); }
     .nav-links.active { right: 0; }
     .hamburger { display: block; }
 }

@@ -101,24 +101,44 @@
       "image": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?auto=format&fit=crop&w=600&q=80"
     },
     {
-      "id": 6,
-      "name": "Kia Picanto",
-      "agency": "Compact Cars Oran",
-      "seats": 4,
-      "engine": "1.0L",
+      "id": 12,
+      "name": "Citroen C3",
+      "agency": "AutoRent DZ",
+      "seats": 5,
+      "engine": "1.2L",
       "bag": "small",
       "trans": "Automatic",
-      "state": 10,
-      "km": 5000,
-      "price": 3500,
-      "wilaya": "31",
+      "state": 8,
+      "km": 72000,
+      "price": 4300,
+      "wilaya": "16",
       "wilayaName": {
-        "en": "Oran",
-        "ar": "وهران",
-        "fr": "Oran"
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
       },
-      "ownerEmail": "compact@gmail.com",
-      "image": "https://images.unsplash.com/photo-1597404294360-feeeff37b2a8?auto=format&fit=crop&w=600&q=80"
+      "ownerEmail": "autorent@gmail.com",
+      "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Citroen C3",
+      "agency": "AutoRent DZ",
+      "seats": 5,
+      "engine": "1.2L",
+      "bag": "small",
+      "trans": "Automatic",
+      "state": 8,
+      "km": 72000,
+      "price": 4300,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "autorent@gmail.com",
+      "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": 7,
@@ -219,26 +239,6 @@
       },
       "ownerEmail": "citywheels@gmail.com",
       "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      "id": 12,
-      "name": "Citroen C3",
-      "agency": "AutoRent DZ",
-      "seats": 5,
-      "engine": "1.2L",
-      "bag": "small",
-      "trans": "Automatic",
-      "state": 8,
-      "km": 72000,
-      "price": 4300,
-      "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
-      "ownerEmail": "autorent@gmail.com",
-      "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80"
     }
   ]
 }
