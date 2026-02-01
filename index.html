@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">STARTUP</a>
+        <div class="logo">Loc</div>
         <div class="hamburger"><i class="fas fa-bars"></i></div>
         <nav class="nav-links">
             <button id="theme-toggle"><i class="fas fa-moon"></i></button>
@@ -24,43 +24,35 @@
         </nav>
     </header>
 
-    <main class="main-content">
+    <section class="hero">
+        <h1 data-key="hero_text">Rent your car easily with <span class="gradient-text">Loc</span></h1>
+        
+        <div class="features">
+            <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_easy">Easy Renting</span></div>
+            <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_wilaya">All 69 Wilayas</span></div>
+            <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_free">Free Service</span></div>
+        </div>
 
-        <section class="hero">
-            <h1 data-key="hero_text">Rent your car easily with <span class="gradient-text">Startup</span></h1>
-            
-            <div class="features">
-                <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_easy">Easy Renting</span></div>
-                <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_wilaya">All 69 Wilayas</span></div>
-                <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_free">Free Service</span></div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <select id="wilaya-select" required>
+                <option value="" disabled selected data-key="choose_wilaya">Select Wilaya</option>
+            </select>
+            <button class="search-btn" id="search-btn" data-key="search">Search</button>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2 style="margin-bottom: 2rem;" data-key="faq_title">Frequently Asked Questions</h2>
+        <div class="faq-list">
             </div>
+    </section>
 
-            <div class="search-box">
-                <i class="fas fa-search"></i>
-                <select id="wilaya-select" required>
-                    <option value="" disabled selected data-key="choose_wilaya">Select Wilaya</option>
-                </select>
-                <button class="search-btn" id="search-btn" data-key="search">Search</button>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2 style="margin-bottom: 2rem;" data-key="faq_title">Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <!-- FAQ items will be added by JS -->
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <p class="disclaimer" data-key="disclaimer">
-                We do not take responsibility for anything that happens after the contact. 
-                We simply are a link between someone who wants to rent a car and a car owner who wants to put his car for rental.
-            </p>
-            <p style="margin-bottom: 1rem; font-size: 1.2rem;" data-key="owner_text">If you want to put your car for rental please</p>
-            <a href="contact.html" class="shake-btn" data-key="contact_btn">Contact Us</a>
-        </section>
-
-    </main>
+    <section class="cta-section">
+        <p class="disclaimer" data-key="disclaimer">We do not take responsibility for anything that happens after the contact. We simply are a link between someone who wants to rent a car and a car owner who wants to put his car for rental.</p>
+        <p style="margin-bottom: 1rem; font-size: 1.2rem;" data-key="owner_text">If you want to put your car for rental please</p>
+        <a href="contact.html" class="shake-btn" data-key="contact_btn">Contact Us</a>
+    </section>
 
     <footer>
         Copyright © 2026 Startup Name. All rights reserved.

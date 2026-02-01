@@ -1,3 +1,5 @@
+
+
 :root {
     --sage: #b4b8ab;
     --dark-blue: #153243;
@@ -9,6 +11,12 @@
     --text-color: var(--dark-blue);
     --card-bg: #ffffff;
     --nav-glass: rgba(244, 249, 233, 0.9);
+    --filter-bg: var(--light-gray);
+    --header-border: var(--teal-blue);
+}
+
+html {
+    height: 100%;
 }
 
 body.dark-mode {
@@ -16,25 +24,73 @@ body.dark-mode {
     --text-color: var(--cream);
     --card-bg: var(--teal-blue);
     --nav-glass: rgba(21, 50, 67, 0.9);
-}
-
-html {
-    height: 100%;
+    --filter-bg: rgba(255, 255, 255, 0.05);
+    --header-border: var(--sage);
 }
 
 main.main-content {
     flex: 1;                     /* ← this is the magic line */
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'DM Sans', sans-serif; transition: background 0.3s, color 0.3s; }
-body { min-height: 100vh;           /* ← at least full viewport height */
+select {
+    outline: none;
+    color: var(--text-color);
+}
+
+.search-btn {
+    transition: all 0.3 ease;
+}
+
+select option {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+body.dark-mode select,
+body.dark-mode select option {
+    background: var(--teal-blue);
+    color: var(--cream);
+}
+
+input, button, select {
+    border: 1px solid black;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'DM Sans', sans-serif; }
+body { 
+    font-family: "DM Sans";
+    font-family: inherit;
+    min-height: 100vh;           /* ← at least full viewport height */
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color); color: var(--text-color); overflow-x: hidden; }
 
 /* Navigation */
-header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; background: var(--nav-glass); backdrop-filter: blur(10px); }
-.logo { font-weight: 700; font-size: 1.8rem; letter-spacing: 1px; color: var(--text-color); }
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 5%; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+    background: var(--nav-glass); 
+    backdrop-filter: blur(10px); 
+    
+    /* Curved bottom corners */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+    /* Border in the opposite color */
+    border-bottom: 2px solid var(--header-border);
+    border-left: 1px solid var(--header-border);
+    border-right: 1px solid var(--header-border);
+    
+    /* Add a slight shadow to emphasize the curve */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.logo { text-decoration: none; font-weight: 700; font-size: 1.8rem; letter-spacing: 1px; color: var(--text-color); }
 nav { display: flex; align-items: center; gap: 20px; }
 nav a, nav button, nav select { text-decoration: none; color: var(--text-color); background: none; border: none; font-size: 1rem; cursor: pointer; font-weight: 500; }
 .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
@@ -42,16 +98,45 @@ nav a, nav button, nav select { text-decoration: none; color: var(--text-color);
 /* Hero */
 .hero { padding: 8rem 2rem 4rem; text-align: center; }
 .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-.gradient-text { background: linear-gradient(45deg, var(--teal-blue), var(--sage)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+
+@keyframes textShine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gradient-text { 
+    /* 1. Define Gradient First */
+    background: linear-gradient(
+        to right, 
+        #7eabc5,
+        var(--teal-blue), 
+        #4a7892, 
+        var(--teal-blue)
+    );
+    
+    /* 2. Set Size larger than the container so it can move */
+    background-size: 300% auto; 
+    
+    /* 3. Clip to text */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    
+    /* 4. Animate */
+    animation: textShine 6s linear infinite; 
+    
+    font-weight: 800; 
+}
+
 .features { display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap; }
 .feature { display: flex; align-items: center; gap: 0.5rem; font-weight: 500; }
 .feature i { color: var(--sage); }
 
 /* Search Bar */
-.search-box { background: var(--card-bg); padding: 1rem; border-radius: 50px; display: flex; align-items: center; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.search-box { background: var(--card-bg); padding: 1rem; border-radius: 50px; display: flex; align-items: center; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.05); gap: 15px; }
 .search-box i { padding: 0 1rem; color: var(--teal-blue); }
 .search-box select { flex: 1; border: none; outline: none; background: transparent; color: var(--text-color); font-size: 1rem; }
-.search-btn { background: var(--teal-blue); color: white; padding: 0.8rem 2rem; border-radius: 30px; border: none; cursor: pointer; font-weight: bold; }
+.search-btn { background: #293a44; color: white; padding: 0.8rem 2rem; border-radius: 30px; border: none; cursor: pointer; font-weight: bold; }
 .search-btn:hover { background: var(--dark-blue); }
 
 /* FAQ */
@@ -90,8 +175,26 @@ body.dark-mode .cta-section { background: rgba(255,255,255,0.05); }
 .submit-btn { width: 100%; padding: 1rem; background: var(--teal-blue); color: white; border: none; border-radius: 8px; cursor: pointer; }
 
 /* Results Page */
-.filters { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; padding: 1rem; margin-top: 80px; background: var(--light-gray); }
-.filters select { padding: 0.5rem; border-radius: 5px; border: 1px solid var(--sage); color: #153243; }
+.filters { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    justify-content: center; 
+    padding: 2rem 1rem; /* Added padding for better look */
+    margin-top: 80px; 
+    background: var(--filter-bg); /* Use the dynamic variable here */
+    border-bottom: 1px solid var(--sage);
+}
+
+/* Style the select boxes inside filters for dark mode */
+.filters select { 
+    padding: 0.6rem 1rem; 
+    border-radius: 8px; 
+    border: 1px solid var(--sage); 
+    background: var(--card-bg); 
+    color: var(--text-color);
+    cursor: pointer;
+}
 .cars-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; padding: 2rem 5%; }
 .car-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
 .car-img { width: 100%; height: 200px; object-fit: cover; background: #ddd; }
