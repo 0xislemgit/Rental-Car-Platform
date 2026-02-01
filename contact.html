@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Loc.dz</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">STARTUP</a>
+        <a href="index.html" class="logo">Loc.dz</a>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
         <nav class="nav-links">
             <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-            <a href="index.html">Home</a>
+            <select id="lang-select">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+                <option value="fr">Français</option>
+            </select>
+            <a href="index.html" data-key="home">Home</a>
         </nav>
     </header>
 
@@ -21,15 +27,15 @@
         <div class="contact-wrapper">
             <div class="contact-card">
                 <i class="fas fa-headset big-icon"></i>
-                <h2>Get in Touch</h2>
-                <p style="margin: 1rem 0;">We are here to help you.</p>
+                <h2 data-key="contact_title">Get in Touch</h2>
+                <p style="margin: 1rem 0;" data-key="contact_subtitle">We are here to help you.</p>
                 <p><i class="fas fa-phone"></i> 07XX98XX56</p>
-                <p><i class="fas fa-envelope"></i> startup.gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Ecole superieure d'economie</p>
+                <p><i class="fas fa-envelope"></i> contact@loc.dz</p>
+                <p><i class="fas fa-map-marker-alt"></i> Algiers, Algeria</p>
             </div>
 
             <div class="contact-form">
-                <form action="mailto:startup@gmail.com" method="post" enctype="text/plain">
+                <form action="mailto:contact@loc.dz" method="post" enctype="text/plain">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
                     </div>
@@ -42,13 +48,13 @@
                     <div class="form-group">
                         <textarea name="message" rows="5" placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn" data-key="send_message">Send Message</button>
                 </form>
             </div>
         </div>
     </main>
 
-    <footer>Copyright © 2026 Startup Name. All rights reserved.</footer>
+    <footer>Copyright © 2026 Loc.dz. All rights reserved.</footer>
 
     <script src="script.js"></script>
 </body>

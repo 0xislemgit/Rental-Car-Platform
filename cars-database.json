@@ -1,0 +1,244 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Renault Clio 4",
+      "agency": "AutoRent DZ",
+      "seats": 5,
+      "engine": "1.2L",
+      "bag": "small",
+      "trans": "Manual",
+      "state": 9,
+      "km": 45000,
+      "price": 4000,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "autorent@gmail.com",
+      "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Volkswagen Golf 7",
+      "agency": "DriveNow Algeria",
+      "seats": 5,
+      "engine": "2.0L",
+      "bag": "small",
+      "trans": "Automatic",
+      "state": 10,
+      "km": 12000,
+      "price": 8000,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "drivenow@gmail.com",
+      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Toyota Hilux",
+      "agency": "Sahara Cars",
+      "seats": 5,
+      "engine": "2.8L",
+      "bag": "large",
+      "trans": "Manual",
+      "state": 8,
+      "km": 120000,
+      "price": 9000,
+      "wilaya": "31",
+      "wilayaName": {
+        "en": "Oran",
+        "ar": "وهران",
+        "fr": "Oran"
+      },
+      "ownerEmail": "sahara@gmail.com",
+      "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Hyundai Accent",
+      "agency": "City Wheels",
+      "seats": 5,
+      "engine": "1.6L",
+      "bag": "small",
+      "trans": "Automatic",
+      "state": 8,
+      "km": 80000,
+      "price": 5000,
+      "wilaya": "06",
+      "wilayaName": {
+        "en": "Béjaïa",
+        "ar": "بجاية",
+        "fr": "Béjaïa"
+      },
+      "ownerEmail": "citywheels@gmail.com",
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Skoda Fabia",
+      "agency": "AutoRent DZ",
+      "seats": 5,
+      "engine": "1.2L",
+      "bag": "small",
+      "trans": "Manual",
+      "state": 9,
+      "km": 30000,
+      "price": 4500,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "autorent@gmail.com",
+      "image": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Kia Picanto",
+      "agency": "Compact Cars Oran",
+      "seats": 4,
+      "engine": "1.0L",
+      "bag": "small",
+      "trans": "Automatic",
+      "state": 10,
+      "km": 5000,
+      "price": 3500,
+      "wilaya": "31",
+      "wilayaName": {
+        "en": "Oran",
+        "ar": "وهران",
+        "fr": "Oran"
+      },
+      "ownerEmail": "compact@gmail.com",
+      "image": "https://images.unsplash.com/photo-1597404294360-feeeff37b2a8?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 7,
+      "name": "Peugeot 208",
+      "agency": "EuroRent Algeria",
+      "seats": 5,
+      "engine": "1.2L",
+      "bag": "small",
+      "trans": "Manual",
+      "state": 9,
+      "km": 35000,
+      "price": 4200,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "eurorent@gmail.com",
+      "image": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Nissan Qashqai",
+      "agency": "Premium Cars DZ",
+      "seats": 5,
+      "engine": "1.6L",
+      "bag": "medium",
+      "trans": "Automatic",
+      "state": 9,
+      "km": 55000,
+      "price": 7000,
+      "wilaya": "25",
+      "wilayaName": {
+        "en": "Constantine",
+        "ar": "قسنطينة",
+        "fr": "Constantine"
+      },
+      "ownerEmail": "premium@gmail.com",
+      "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 9,
+      "name": "Dacia Duster",
+      "agency": "Adventure Rentals",
+      "seats": 5,
+      "engine": "1.5L",
+      "bag": "large",
+      "trans": "Manual",
+      "state": 8,
+      "km": 95000,
+      "price": 5500,
+      "wilaya": "31",
+      "wilayaName": {
+        "en": "Oran",
+        "ar": "وهران",
+        "fr": "Oran"
+      },
+      "ownerEmail": "adventure@gmail.com",
+      "image": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 10,
+      "name": "Ford Focus",
+      "agency": "DriveNow Algeria",
+      "seats": 5,
+      "engine": "1.6L",
+      "bag": "small",
+      "trans": "Automatic",
+      "state": 9,
+      "km": 48000,
+      "price": 6000,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "drivenow@gmail.com",
+      "image": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 11,
+      "name": "Seat Ibiza",
+      "agency": "City Wheels",
+      "seats": 5,
+      "engine": "1.2L",
+      "bag": "small",
+      "trans": "Manual",
+      "state": 10,
+      "km": 18000,
+      "price": 3800,
+      "wilaya": "06",
+      "wilayaName": {
+        "en": "Béjaïa",
+        "ar": "بجاية",
+        "fr": "Béjaïa"
+      },
+      "ownerEmail": "citywheels@gmail.com",
+      "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 12,
+      "name": "Citroen C3",
+      "agency": "AutoRent DZ",
+      "seats": 5,
+      "engine": "1.2L",
+      "bag": "small",
+      "trans": "Automatic",
+      "state": 8,
+      "km": 72000,
+      "price": 4300,
+      "wilaya": "16",
+      "wilayaName": {
+        "en": "Algiers",
+        "ar": "الجزائر",
+        "fr": "Alger"
+      },
+      "ownerEmail": "autorent@gmail.com",
+      "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80"
+    }
+  ]
+}

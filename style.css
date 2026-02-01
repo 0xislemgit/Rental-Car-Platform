@@ -209,3 +209,62 @@ footer { text-align: center; padding: 2rem; background: var(--dark-blue); color:
     .nav-links.active { right: 0; }
     .hamburger { display: block; }
 }
+
+/* Additional styles for agency and location display in car cards */
+
+.car-agency,
+.car-location {
+    color: var(--teal-blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.car-location {
+    color: #666;
+    font-weight: 400;
+}
+
+.dark-mode .car-location {
+    color: #aaa;
+}
+
+.car-agency i,
+.car-location i {
+    font-size: 0.85rem;
+}
+
+/* Enhanced car card hover effect */
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* Filter container responsive improvements */
+@media (max-width: 1024px) {
+    .filters {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .filters {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .filters select {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters {
+        grid-template-columns: 1fr;
+    }
+}
