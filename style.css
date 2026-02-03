@@ -789,7 +789,8 @@ footer {
 
 /* ─── main layout helper ─────────────────────────── */
 main.main-content { flex: 1; }
-
+.contact-main { display: flex; justify-content: center; align-items: center;}
+.contact-form { display: flex; justify-content: center; align-items: center;}
 /* ─── RTL tweaks ─────────────────────────────────── */
 [dir="rtl"] .back-btn i { transform: scaleX(-1); }
 [dir="rtl"] .agency-cta i { transform: scaleX(-1); }
