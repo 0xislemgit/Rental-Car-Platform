@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Cars - Loc.dz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Loc.dz</a>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <nav class="nav-links">
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+            <select id="lang-select">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+                <option value="fr">Français</option>
+            </select>
+            <a href="contact.html" data-key="contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Back button -->
+        <div class="back-bar">
+            <a href="#" class="back-btn" id="cars-back-btn"><i class="fas fa-arrow-left"></i> <span data-key="back">Back</span></a>
+        </div>
+
+        <!-- Page heading -->
+        <div class="page-heading">
+            <h2 id="cars-page-title">Cars at …</h2>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters" id="filters-bar">
+            <select id="filter-price">
+                <option value="all" data-key="filter_price">Any Price</option>
+                <option value="low" data-key="filter_price_low">Under 5000 DZD</option>
+                <option value="high" data-key="filter_price_high">Over 5000 DZD</option>
+            </select>
+            <select id="filter-seats">
+                <option value="all" data-key="filter_seats">Any Seats</option>
+                <option value="4" data-key="filter_seats_4">4 Seats</option>
+                <option value="5" data-key="filter_seats_5">5 Seats</option>
+                <option value="7" data-key="filter_seats_7">7+ Seats</option>
+            </select>
+            <select id="filter-engine">
+                <option value="all" data-key="filter_engine">Any Engine</option>
+                <option value="1.0">1.0L</option>
+                <option value="1.2">1.2L</option>
+                <option value="1.5">1.5L</option>
+                <option value="1.6">1.6L</option>
+                <option value="2.0">2.0L+</option>
+            </select>
+            <select id="filter-bag">
+                <option value="all" data-key="filter_bag">Bag Size</option>
+                <option value="small" data-key="filter_bag_small">Small</option>
+                <option value="medium" data-key="filter_bag_medium">Medium</option>
+                <option value="large" data-key="filter_bag_large">Large</option>
+            </select>
+            <select id="filter-km">
+                <option value="all" data-key="filter_km">Mileage</option>
+                <option value="new" data-key="filter_km_new">New (&lt; 50k)</option>
+                <option value="used" data-key="filter_km_used">Used (&gt; 50k)</option>
+            </select>
+            <select id="filter-trans">
+                <option value="all" data-key="filter_trans">Transmission</option>
+                <option value="Manual" data-key="filter_trans_manual">Manual</option>
+                <option value="Automatic" data-key="filter_trans_automatic">Automatic</option>
+            </select>
+            <select id="filter-chauffeur">
+                <option value="all" data-key="filter_chauffeur">Chauffeur</option>
+                <option value="avec" data-key="filter_chauffeur_avec">Avec Chauffeur</option>
+                <option value="sans" data-key="filter_chauffeur_sans">Sans Chauffeur</option>
+            </select>
+        </div>
+
+        <!-- Cars grid -->
+        <div class="cars-grid" id="cars-container"></div>
+    </main>
+
+    <footer>
+        <p class="footer-copy">Copyright &copy; 2026 Loc.dz. All rights reserved.</p>
+        <p class="footer-credit">Made by 0xislem</p>
+    </footer>
+
+    <!-- Rent Popup (mailto redirect notice) -->
+    <div class="modal-overlay" id="rent-modal">
+        <div class="modal-box">
+            <div class="modal-icon mail-icon"><i class="fas fa-envelope"></i></div>
+            <h3 data-key="rent_modal_title">Redirecting to Email</h3>
+            <p data-key="rent_modal_msg">You will be taken to your email app. Send your rental request and attach any photos or documents needed.</p>
+            <div class="modal-actions">
+                <button class="btn-modal-confirm" id="rent-confirm" data-key="confirm">Confirm</button>
+                <button class="btn-modal-cancel" id="rent-cancel" data-key="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pay Popup (not available yet) -->
+    <div class="modal-overlay" id="pay-modal">
+        <div class="modal-box">
+            <div class="modal-icon pay-icon"><i class="fas fa-credit-card"></i></div>
+            <h3 data-key="pay_modal_title">Payment Not Available</h3>
+            <p data-key="pay_modal_msg">Online payment is coming soon. Stay tuned!</p>
+            <button class="btn-modal-ok" id="pay-ok" data-key="got_it">Got it</button>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loc.dz</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <div class="logo"><a href="#">Loc.dz</a></div>
+        <div class="logo"><a href="index.html">Loc.dz</a></div>
         <div class="hamburger"><i class="fas fa-bars"></i></div>
         <nav class="nav-links">
-            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
             <select id="lang-select">
                 <option value="en">English</option>
                 <option value="ar">العربية</option>
@@ -23,40 +23,76 @@
             <a href="contact.html" data-key="contact">Contact Us</a>
         </nav>
     </header>
+
     <section class="hero">
-        <img src="logo.png" class="logo-img" alt="">
+        <img src="logo.png" class="logo-img" alt="Loc.dz Logo">
         <h1 data-key="hero_text">Rent your car easily with <span class="gradient-text">Loc.dz</span></h1>
-        
+
         <div class="features">
             <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_easy">Easy Renting</span></div>
             <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_wilaya">All 69 Wilayas</span></div>
             <div class="feature"><i class="fas fa-check-circle"></i> <span data-key="feat_free">Free Service</span></div>
         </div>
 
-        <div class="search-box">
-            <i class="fas fa-search"></i>
-            <select id="wilaya-select" required>
-                <option value="" disabled selected data-key="choose_wilaya">Select Wilaya</option>
-            </select>
+        <!-- Search Card -->
+        <div class="search-card">
+            <!-- Row 1: Wilaya + Time -->
+            <div class="search-row">
+                <div class="search-field">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="wilaya-select">
+                        <option value="" disabled selected data-key="choose_wilaya">Select Wilaya</option>
+                    </select>
+                </div>
+                <div class="search-field time-field">
+                    <i class="fas fa-clock"></i>
+                    <select id="hour-select"></select>
+                    <span class="time-sep">:</span>
+                    <select id="minute-select"></select>
+                    <select id="ampm-select">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Row 2: Date range -->
+            <div class="search-row">
+                <div class="search-field date-field">
+                    <i class="fas fa-calendar-alt"></i>
+                    <label data-key="date_from">From</label>
+                    <input type="date" id="date-from">
+                </div>
+                <div class="search-field date-field">
+                    <i class="fas fa-calendar-check"></i>
+                    <label data-key="date_to">To</label>
+                    <input type="date" id="date-to">
+                </div>
+            </div>
+            <!-- Search Button -->
             <button class="search-btn" id="search-btn" data-key="search">Search</button>
         </div>
     </section>
 
+    <!-- FAQ -->
     <section class="faq-section">
-        <h2 style="margin-bottom: 2rem;" data-key="faq_title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-            </div>
+        <h2 data-key="faq_title">Frequently Asked Questions</h2>
+        <div class="faq-list"></div>
     </section>
 
+    <!-- CTA -->
     <section class="cta-section">
         <p class="disclaimer" data-key="disclaimer">We do not take responsibility for anything that happens after the contact. We simply are a link between someone who wants to rent a car and a car owner who wants to put his car for rental.</p>
-        <p style="margin-bottom: 1rem; font-size: 1.2rem;" data-key="owner_text">If you want to put your car for rental please</p>
+        <p class="cta-owner" data-key="owner_text">If you want to put your car for rental please</p>
         <a href="contact.html" class="shake-btn" data-key="contact_btn">Contact Us</a>
     </section>
 
     <footer>
-        Copyright © 2026 Loc.dz. All rights reserved. -0xislem
+        <p class="footer-copy">Copyright &copy; 2026 Loc.dz. All rights reserved.</p>
+        <p class="footer-credit">Made by 0xislem</p>
     </footer>
+
+    <!-- Validation toast -->
+    <div class="toast" id="toast"></div>
 
     <script src="script.js"></script>
 </body>

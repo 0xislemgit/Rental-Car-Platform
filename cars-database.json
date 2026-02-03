@@ -1,4 +1,55 @@
 {
+  "agencies": [
+    {
+      "name": "AutoRent DZ",
+      "email": "autorent@gmail.com",
+      "rating": 4.3,
+      "reviewCount": 127,
+      "description": { "en": "Trusted agency with a wide range of affordable cars across Algiers.", "ar": "وكالة موثوقة بسيارات متنوعة وبأسعار مقبولة في الجزائر.", "fr": "Agence fiable avec un large choix de voitures abordables à Alger." }
+    },
+    {
+      "name": "DriveNow Algeria",
+      "email": "drivenow@gmail.com",
+      "rating": 4.6,
+      "reviewCount": 89,
+      "description": { "en": "Premium cars with excellent maintenance and fast service.", "ar": "سيارات فاخرة مع خدمة ممتازة وسريعة.", "fr": "Voitures premium avec un entretien excellent et un service rapide." }
+    },
+    {
+      "name": "Sahara Cars",
+      "email": "sahara@gmail.com",
+      "rating": 3.9,
+      "reviewCount": 54,
+      "description": { "en": "Best choice for off-road and desert adventures in Oran.", "ar": "الخيار الأفضل للرحلات الصحراوية والطريق الوعر في وهران.", "fr": "Meilleur choix pour les aventures hors route et du désert à Oran." }
+    },
+    {
+      "name": "City Wheels",
+      "email": "citywheels@gmail.com",
+      "rating": 4.1,
+      "reviewCount": 73,
+      "description": { "en": "Compact and city-friendly cars for everyday urban drives.", "ar": "سيارات صغيرة ومناسبة للقيادة اليومية في المدن.", "fr": "Voitures compactes et adaptées à la conduite urbaine quotidienne." }
+    },
+    {
+      "name": "EuroRent Algeria",
+      "email": "eurorent@gmail.com",
+      "rating": 4.5,
+      "reviewCount": 112,
+      "description": { "en": "European brand specialists with well-maintained fleets.", "ar": "متخصصون في السيارات الأوروبية مع أسطول جيد الصيانة.", "fr": "Spécialistes en marques européennes avec des flottes bien entretenues." }
+    },
+    {
+      "name": "Premium Cars DZ",
+      "email": "premium@gmail.com",
+      "rating": 4.7,
+      "reviewCount": 98,
+      "description": { "en": "Top-tier vehicles and luxury rental experience.", "ar": "سيارات فاخرة وتجربة استئجار متميزة.", "fr": "Véhicules haut de gamme et expérience de location luxury." }
+    },
+    {
+      "name": "Adventure Rentals",
+      "email": "adventure@gmail.com",
+      "rating": 4.0,
+      "reviewCount": 61,
+      "description": { "en": "Durable and reliable cars built for adventure trips across Algeria.", "ar": "سيارات متينة وموثوقة مثالية للرحلات الاستكشافية في الجزائر.", "fr": "Voitures robustes et fiables parfaites pour les voyages d'aventure en Algérie." }
+    }
+  ],
   "cars": [
     {
       "id": 1,
@@ -8,16 +59,15 @@
       "engine": "1.2L",
       "bag": "small",
       "trans": "Manual",
+      "chauffeur": "sans",
       "state": 9,
       "km": 45000,
       "price": 4000,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "autorent@gmail.com",
+      "availableFrom": "2026-02-05",
+      "availableTo": "2026-03-28",
       "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -28,16 +78,15 @@
       "engine": "2.0L",
       "bag": "small",
       "trans": "Automatic",
+      "chauffeur": "avec",
       "state": 10,
       "km": 12000,
       "price": 8000,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "drivenow@gmail.com",
+      "availableFrom": "2026-02-01",
+      "availableTo": "2026-04-15",
       "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -48,16 +97,15 @@
       "engine": "2.8L",
       "bag": "large",
       "trans": "Manual",
+      "chauffeur": "avec",
       "state": 8,
       "km": 120000,
       "price": 9000,
       "wilaya": "31",
-      "wilayaName": {
-        "en": "Oran",
-        "ar": "وهران",
-        "fr": "Oran"
-      },
+      "wilayaName": { "en": "Oran", "ar": "وهران", "fr": "Oran" },
       "ownerEmail": "sahara@gmail.com",
+      "availableFrom": "2026-02-10",
+      "availableTo": "2026-03-10",
       "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -68,16 +116,15 @@
       "engine": "1.6L",
       "bag": "small",
       "trans": "Automatic",
+      "chauffeur": "sans",
       "state": 8,
       "km": 80000,
       "price": 5000,
       "wilaya": "06",
-      "wilayaName": {
-        "en": "Béjaïa",
-        "ar": "بجاية",
-        "fr": "Béjaïa"
-      },
+      "wilayaName": { "en": "Béjaïa", "ar": "بجاية", "fr": "Béjaïa" },
       "ownerEmail": "citywheels@gmail.com",
+      "availableFrom": "2026-02-03",
+      "availableTo": "2026-05-01",
       "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -88,56 +135,53 @@
       "engine": "1.2L",
       "bag": "small",
       "trans": "Manual",
+      "chauffeur": "sans",
       "state": 9,
       "km": 30000,
       "price": 4500,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "autorent@gmail.com",
+      "availableFrom": "2026-01-15",
+      "availableTo": "2026-04-20",
       "image": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": 12,
-      "name": "Citroen C3",
+      "name": "Citroën C3",
       "agency": "AutoRent DZ",
       "seats": 5,
       "engine": "1.2L",
       "bag": "small",
       "trans": "Automatic",
+      "chauffeur": "sans",
       "state": 8,
       "km": 72000,
       "price": 4300,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "autorent@gmail.com",
+      "availableFrom": "2026-02-08",
+      "availableTo": "2026-03-30",
       "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": 6,
-      "name": "Citroen C3",
+      "name": "Citroën C3 Sport",
       "agency": "AutoRent DZ",
       "seats": 5,
       "engine": "1.2L",
       "bag": "small",
       "trans": "Automatic",
+      "chauffeur": "avec",
       "state": 8,
-      "km": 72000,
-      "price": 4300,
+      "km": 68000,
+      "price": 4800,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "autorent@gmail.com",
+      "availableFrom": "2026-02-12",
+      "availableTo": "2026-04-05",
       "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -148,16 +192,15 @@
       "engine": "1.2L",
       "bag": "small",
       "trans": "Manual",
+      "chauffeur": "sans",
       "state": 9,
       "km": 35000,
       "price": 4200,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "eurorent@gmail.com",
+      "availableFrom": "2026-01-28",
+      "availableTo": "2026-04-10",
       "image": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -168,16 +211,15 @@
       "engine": "1.6L",
       "bag": "medium",
       "trans": "Automatic",
+      "chauffeur": "avec",
       "state": 9,
       "km": 55000,
       "price": 7000,
       "wilaya": "25",
-      "wilayaName": {
-        "en": "Constantine",
-        "ar": "قسنطينة",
-        "fr": "Constantine"
-      },
+      "wilayaName": { "en": "Constantine", "ar": "قسنطينة", "fr": "Constantine" },
       "ownerEmail": "premium@gmail.com",
+      "availableFrom": "2026-02-01",
+      "availableTo": "2026-05-15",
       "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -188,16 +230,15 @@
       "engine": "1.5L",
       "bag": "large",
       "trans": "Manual",
+      "chauffeur": "sans",
       "state": 8,
       "km": 95000,
       "price": 5500,
       "wilaya": "31",
-      "wilayaName": {
-        "en": "Oran",
-        "ar": "وهران",
-        "fr": "Oran"
-      },
+      "wilayaName": { "en": "Oran", "ar": "وهران", "fr": "Oran" },
       "ownerEmail": "adventure@gmail.com",
+      "availableFrom": "2026-02-06",
+      "availableTo": "2026-03-25",
       "image": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -208,36 +249,34 @@
       "engine": "1.6L",
       "bag": "small",
       "trans": "Automatic",
+      "chauffeur": "sans",
       "state": 9,
       "km": 48000,
       "price": 6000,
       "wilaya": "16",
-      "wilayaName": {
-        "en": "Algiers",
-        "ar": "الجزائر",
-        "fr": "Alger"
-      },
+      "wilayaName": { "en": "Algiers", "ar": "الجزائر", "fr": "Alger" },
       "ownerEmail": "drivenow@gmail.com",
+      "availableFrom": "2026-02-04",
+      "availableTo": "2026-04-30",
       "image": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": 11,
-      "name": "Seat Ibiza",
+      "name": "SEAT Ibiza",
       "agency": "City Wheels",
       "seats": 5,
       "engine": "1.2L",
       "bag": "small",
       "trans": "Manual",
+      "chauffeur": "sans",
       "state": 10,
       "km": 18000,
       "price": 3800,
       "wilaya": "06",
-      "wilayaName": {
-        "en": "Béjaïa",
-        "ar": "بجاية",
-        "fr": "Béjaïa"
-      },
+      "wilayaName": { "en": "Béjaïa", "ar": "بجاية", "fr": "Béjaïa" },
       "ownerEmail": "citywheels@gmail.com",
+      "availableFrom": "2026-01-20",
+      "availableTo": "2026-05-10",
       "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80"
     }
   ]
