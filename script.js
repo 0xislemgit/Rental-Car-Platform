@@ -1,5 +1,5 @@
 /* =============================================================
-   LOC.DZ — script.js  (v2)
+   Quickly Rent — script.js  (v2)
    Handles: index, agencies, cars, contact pages
    Features: i18n (en/ar/fr), dark mode, agency flow, modals,
              filters incl. chauffeur, time picker, date range,
@@ -74,7 +74,7 @@ const WILAYAS = {
 // ── Translations ────────────────────────────────────────────
 const T = {
   en:{
-    hero_text:"Rent your car easily with Loc.dz",
+    hero_text:"Rent your car easily with Quickly Rent",
     feat_easy:"Easy Renting", feat_wilaya:"All 69 Wilayas", feat_free:"Free Service",
     choose_wilaya:"Select Wilaya…", search:"Search",
     date_from:"From", date_to:"To",
@@ -115,7 +115,7 @@ const T = {
     toast_select_wilaya:"Please select a wilaya first."
   },
   ar:{
-    hero_text:"أجر سيارتك بسهولة مع Loc.dz",
+    hero_text:"أجر سيارتك بسهولة مع Quickly Rent",
     feat_easy:"سهولة التأجير", feat_wilaya:"كل 69 ولاية", feat_free:"خدمة مجانية",
     choose_wilaya:"اختر الولاية…", search:"بحث",
     date_from:"من", date_to:"إلى",
@@ -151,7 +151,7 @@ const T = {
     toast_select_wilaya:"من فضلك اختر ولاية أولاً."
   },
   fr:{
-    hero_text:"Louez votre voiture facilement avec Loc.dz",
+    hero_text:"Louez votre voiture facilement avec Quickly Rent",
     feat_easy:"Location facile", feat_wilaya:"Toutes les 69 wilayas", feat_free:"Service gratuit",
     choose_wilaya:"Choisir une wilaya…", search:"Rechercher",
     date_from:"De", date_to:"À",
